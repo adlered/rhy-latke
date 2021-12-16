@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Description: Latke Repository (MySQL).
+    Version: 2.1.1.8, Mar 27, 2021
+    Author: Liang Ding
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>latke-repository-mysql</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Latke Repository (MySQL)</name>
+    <description>Latke Repository on MySQL.</description>
+    <inceptionYear>2011</inceptionYear>
+
+    <parent>
+        <groupId>org.b3log</groupId>
+        <artifactId>latke-parent</artifactId>
+        <version>3.4.15-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.b3log</groupId>
+            <artifactId>latke-core</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.23</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
