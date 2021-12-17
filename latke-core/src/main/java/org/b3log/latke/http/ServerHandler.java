@@ -137,7 +137,7 @@ final class ServerHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
                         response.addCookie(c);
                     }
                 } else {
-                    cookie.setMaxAge(60 * 60 * 24 * 7);
+                    cookie.setMaxAge(60 * 60 * 24 * 30);
                     request.addCookie(new org.b3log.latke.http.Cookie(cookie));
                     response.addCookie(new org.b3log.latke.http.Cookie(cookie));
                 }
