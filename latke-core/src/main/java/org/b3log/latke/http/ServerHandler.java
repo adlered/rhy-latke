@@ -72,6 +72,8 @@ final class ServerHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
         } else {
             // 标识为静态资源文件
             request.setStaticResource(true);
+            // 设置缓存
+            response.addHeader("cache-control", "max-age=2678400");
         }
 
         // 分发处理
